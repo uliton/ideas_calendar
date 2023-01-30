@@ -1,0 +1,12 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/reset";
+@import "./utils/normolize";
+@import "./utils/container";
+
+@import "./App.scss";
+@import "./components/Header/Header.scss";
+@import "./components/MonthAndYear/MonthAndYear.scss";
+@import "./components/Day/Day.scss";
+@import "./components/Modal/Modal.scss";
+@import "./components/Idea/Idea.scss";

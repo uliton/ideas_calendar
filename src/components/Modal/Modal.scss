@@ -1,0 +1,166 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 540px;
+  border: 1px solid salmon;
+  border-radius: 20px;
+  background-color: rgb(201, 233, 255);
+  padding: 20px;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+
+    &--text {
+      font-size: 28px;
+    }
+
+    &--exitButton {
+      width: 24px;
+      height: 24px;
+      transition: all 500ms;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__title {
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #000;
+    margin-bottom: 20px;
+
+    &__container {
+      display: flex;
+      gap: 8px;
+    }
+
+    &--text {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    &--errorText {
+      color: red;
+    }
+
+    &--input {
+      width: 100%;
+      padding: 12px 20px;
+      font-size: 20px;
+      outline: none;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    outline: none;
+    resize: none;
+  }
+
+  &__timeSet {
+    border-top: 1px dotted #000;
+    padding-top: 20px;
+  }
+
+  &__service {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
+
+.timeSet {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  &__date {
+    width: min-content;
+    padding-bottom: 4px;
+    border-bottom: 1px dotted #000;
+
+    &__container {
+      display: flex;
+      gap: 8px;
+      font-size: 15px;
+    }
+
+    &--errorText {
+      color: red;
+    }
+
+    &--input {
+      font-size: 20px;
+      background-color: inherit;
+      border: none;
+      outline: none;
+    }
+  }
+
+  &__time {
+    width: 100px;
+    padding-bottom: 4px;
+    border-bottom: 1px dotted #000;
+  }
+}
+
+.service {
+  &__status {
+    font-size: 9px;
+    color: grey;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 10px;
+
+    &--deleteButton {
+      height: 30px;
+
+      &:hover {
+        cursor: pointer;
+        animation: move .5s linear infinite;
+
+        @keyframes move {
+          25% {
+            transform: rotateZ(5deg);
+          }
+          75% {
+            transform: rotateZ(-10deg);
+          }
+        }
+      }
+    }
+
+    &--saveButton {
+      width: 100px;
+      padding: 8px;
+      border-radius: 8px;
+      border: none;
+      background-color: salmon;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: all 500ms;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+      }
+
+      &--disabled {
+        opacity: 0.5;
+      }
+    }
+  }
+}

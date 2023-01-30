@@ -1,0 +1,74 @@
+.may {
+  position: absolute;
+  right: 0;
+  margin: 8px 0;
+  padding: 12px;
+  width: 220px;
+  height: 140px;
+  background-color: #fff;
+  border: 1px solid rgb(78,188,59);
+  border-radius: 8px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  &__month {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    row-gap: 6px;
+    font-size: 10.5px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--hover {
+      &:hover {
+        cursor: pointer;
+        color: rgb(78,188,59);
+      }
+    }
+
+    &--active {
+      color: salmon;
+
+      &:hover {
+        color: salmon;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__year {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30%;
+    background-color: salmon;
+    color: #fff;
+    transition: all 500ms;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.08);
+    }
+  }
+}

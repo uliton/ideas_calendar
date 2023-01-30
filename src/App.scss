@@ -1,0 +1,26 @@
+.app {
+  margin: 50px auto;
+
+  &--modal {
+    filter: blur(5px);
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 100px);
+  gap: 10px;
+  width: min-content;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid salmon;
+  border-radius: 20px;
+
+  &__column {
+    @for $start from 0 through 6 {
+      &--#{$start + 1}-#{$start + 2} {
+        grid-column: #{$start + 1} / #{$start + 2};
+      }
+    }
+  }
+}

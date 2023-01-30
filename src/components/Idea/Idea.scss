@@ -1,0 +1,13 @@
+.idea {
+  background-color: rgb(231, 217, 10);
+  padding: 1px 6px;
+  font-size: 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

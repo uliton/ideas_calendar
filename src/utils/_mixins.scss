@@ -1,0 +1,11 @@
+@mixin on768 {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin on1440 {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}

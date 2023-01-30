@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 40px;
+
+  &__plus {
+    transition: all 500ms;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0;
+
+  &__monthName {
+    width: 80px;
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+  &__year {
+    margin-left: 12px;
+    font-size: 20px;
+  }
+
+  &__calendar {
+    position: relative;
+    
+    &--img {
+      margin-left: 16px;
+      width: 32px;
+      transition: all 500ms;
+      
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.12);
+      }
+    }
+  }
+}
+
+.button {
+  width: 8px;
+  height: 8px;
+  transform: rotateZ(-45deg);
+  margin: 4px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__left {
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+  }
+
+  &__right {
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+
+  &__up {
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+
+  &__down {
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+  }
+}
