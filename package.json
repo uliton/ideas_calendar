@@ -1,6 +1,6 @@
 {
-  "homepage": ".",
-  "name": "react-starter-pack",
+  "homepage": "https://uliton.github.io/ideas_calendar/",
+  "name": "ideas_calendar",
   "version": "0.1.0",
   "dependencies": {
     "@emotion/react": "^11.10.4",
